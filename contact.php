@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookMyStay|Contact|</title>
+    <title>BookMyStay |Contact|</title>
     <?php require('inc/links.php') ?>
     <link rel="stylesheet" href="css/common.css">
 </head>
@@ -31,7 +31,7 @@
                     
                     <h5>Address</h5>
                     <a href="https://maps.app.goo.gl/4LXP865zHDRALzRaA" target="_blank" class="d-inline-block text-decoration-none text-dark mb-2">
-                        <i class="bi bi-geo-alt-fill"></i>XYZ, Kashmere gate, Delhi
+                        <i class="bi bi-geo-alt-fill"></i>XYZ, Kashmere Gate, Delhi
                     </a>
                     
                     <h5 class="mt-4">Call us</h5>
@@ -50,15 +50,15 @@
                     
                     <h5 class="mt-4">Follow us</h5>
                     <a href="#" class="d-inline-block text-dark fs-5 me-2">
-                            <i class="bi bi-twitter me-1"></i> 
+                          
                     </a>
 
                     <a href="#" class="d-inline-block text-dark fs-5 me-2">
-                            <i class="bi bi-facebook me-1"></i>
+                        <i class="bi bi-facebook me-1"></i>
                     </a>
                    
                     <a href="#" class="d-inline-block text-dark fs-5"> 
-                            <i class="bi bi-instagram me-1"></i>  
+                        <i class="bi bi-instagram me-1"></i>  
                     </a> 
 
                 </div>
