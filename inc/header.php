@@ -85,40 +85,40 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6 ps-0 mb-3">
-                            <label class="form-label">Name</label>
-                            <input type="text" class="form-control shadow-none">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-control shadow-none">
                             </div>
                             <div class="col-md-6 p-0">
-                            <label class="form-label">Email</label>
-                            <input type="email" class="form-control shadow-none">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control shadow-none">
                             </div>
                             <div class="col-md-6 ps-0 mb-3">
-                            <label class="form-label">Phone no.</label>
-                            <input type="number" class="form-control shadow-none">
+                                <label class="form-label">Phone no.</label>
+                                <input type="number" class="form-control shadow-none">
                             </div>
                             <div class="col-md-6 p-0 mb-3">
-                            <label class="form-label">Picture</label>
-                            <input type="file" class="form-control shadow-none">
+                                <label class="form-label">Picture</label>
+                                <input type="file" class="form-control shadow-none">
                             </div>
                             <div class="col-md-12 p-0 mb-3">
-                            <label class="form-label">Address</label>
-                            <textarea class="form-control shadow-none" rows="1"></textarea>
+                                <label class="form-label">Address</label>
+                                <textarea class="form-control shadow-none" rows="1"></textarea>
                             </div>
                             <div class="col-md-6 ps-0 mb-3">
-                            <label class="form-label">PinCode</label>
-                            <input type="number" class="form-control shadow-none">
+                                <label class="form-label">PinCode</label>
+                                <input type="number" class="form-control shadow-none">
                             </div>
                             <div class="col-md-6 p-0 mb-3">
-                            <label class="form-label">Date of birth</label>
-                            <input type="date" class="form-control shadow-none">
+                                <label class="form-label">Date of birth</label>
+                                <input type="date" class="form-control shadow-none">
                             </div>
                             <div class="col-md-6 ps-0 mb-3">
-                            <label class="form-label">Password</label>
-                            <input type="password" class="form-control shadow-none">
+                                <label class="form-label">Password</label>
+                                <input type="password" class="form-control shadow-none">
                             </div>
                             <div class="col-md-6 p-0 mb-3">
-                            <label class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control shadow-none">
+                                <label class="form-label">Confirm Password</label>
+                                <input type="password" class="form-control shadow-none">
                             </div>
                         </div>
                     </div>
