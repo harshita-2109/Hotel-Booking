@@ -23,7 +23,6 @@ input[type=number] {
     appearance: textfield;         /* Standard property */
 }
 
-
 .custom-bg{
     background-color: var(--teal);
     border: 1px solid var(--teal_hover)
@@ -58,5 +57,8 @@ input[type=number] {
     }
     #main-content{
         margin-top: 60px;
+    }
+    .custom-alert{
+        top: 130px;
     }
 }
