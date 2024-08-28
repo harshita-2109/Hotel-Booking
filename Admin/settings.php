@@ -215,7 +215,9 @@
                             <i class="bi bi-plus-square"></i> Add
                             </button>                        
                         </div>
-                        <div class="row" id="team-data"></div>
+
+                        <div class="row" id="team-data">
+                        </div>
                     </div>
                 </div>
 
@@ -238,8 +240,8 @@
                                 </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" onclick="" class="btn text-secondary shadow-none" data-bs-dismiss="modal">CANCEL</button>
-                                <button type="submit" class="btn custom-bg text-white shadow-none">SAVE</button>
+                                <button type="button" onclick="member_name.value='',member_picture.value=''" class="btn text-secondary shadow-none" data-bs-dismiss="modal">CANCEL</button>
+                                <button type="submit" class="btn custom-bg text-white shadow-none">SUBMIT</button>
                             </div>
                             </div>
                         </form>
@@ -432,25 +434,63 @@
             let xhr = new XMLHttpRequest();
             xhr.open("POST","ajax/settings_crud.php",true);
 
-            xhr.onload = function(){
-                // var myModal = document.getElementById('team-s');
-                // var modal = bootstrap.Modal.getInstance(myModal);
-                // modal.hide();
+            xhr.onload = function(){            
+                var myModal = document.getElementById('team-s');
+                var modal = bootstrap.Modal.getInstance(myModal);
+                modal.hide();
 
-                // if(this.responseText == 1){
-                //     alert('success','Member added!');
-                //     get_general();
-                // } else{
-                //     alert('error','No changes made!');
-                // }
+                if(this.responseText == 'inv_img'){
+                    alert('error','Only JPG and PNG images are allowed!');
+                } else if(this.responseText == 'inv_size'){
+                    alert('error','Image should be less than 2MB!');
+                } else if(this.responseText == 'upd_failed'){
+                    alert('error','Image upload failed. Server Down!');
+                } else {
+                    alert('success','New member added!');
+                    member_name_inp.value='';
+                    member_picture_inp.value='';
+                    get_members();
+                }
             }
 
             xhr.send(data);
         }
 
+        function get_members()
+        {
+            let xhr = new XMLHttpRequest();
+            xhr.open("POST","ajax/settings_crud.php",true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+            xhr.onload = function(){
+                document.getElementById('team-data').innerHTML = this.responseText;
+            }
+
+            xhr.send('get_members');
+        }
+
+        function rem_member(val)
+        {
+            let xhr = new XMLHttpRequest();
+            xhr.open("POST","ajax/settings_crud.php",true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+            xhr.onload = function(){
+                if(this.responseText == 1){
+                    alert('success','Member removed!');
+                    get_members();
+                } else{
+                    alert('error','Server down!');
+                }            
+            }
+
+            xhr.send('rem_member='+val);
+        }
+
         window.onload = function(){
             get_general();
             get_contacts();
+            get_members();
         }
 
     </script>
