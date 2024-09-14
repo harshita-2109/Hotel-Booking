@@ -15,7 +15,7 @@
     }
 
     function remAlert(){
-        document.getElementsByClassName('alert').[0].remove();
+        document.getElementsByClassName('alert')[0].remove();
     }
 
     function setActive(){
